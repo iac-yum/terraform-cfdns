@@ -10,9 +10,9 @@ Manage [CloudFlare](https://www.cloudflare.com/) DNS records with [Terraform Clo
         
 2. Setup credentials
 
-    export CLOUDFLARE_EMAIL=your.email@domain.tld
-    export CLOUDFLARE_API_KEY=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+        export CLOUDFLARE_EMAIL=your.email@domain.tld
+        export CLOUDFLARE_API_KEY=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 
 3. Apply
 
-      terraform apply
+        terraform apply
