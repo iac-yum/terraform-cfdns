@@ -4,8 +4,15 @@ terraform {
   required_providers {
     cloudflare = {
       source = "cloudflare/cloudflare"
-      # no mac_arm64 build in registry :(
-      # version = "99.0.0"  
+      version = "~> 2.17.0"
+      # local build for darwin_arm64, not in registry yet :(
+      #version = "99.0.0"  
+    }
+    dns = {
+      source = "hashicorp/dns"
+      version = "~> 3.0.1"
+      # local build for darwin_arm64, not in registry yet :(
+      #version = "99.0.0"
     }
   }
 }
