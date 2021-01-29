@@ -2,12 +2,12 @@
 A:
   # - { name: "@", value: "123.123.123.120" }  # NOTE: @ records only work in CF
   # - { name: "@", value: "123.123.123.121" }  # NOTE: @ records only work in CF
-  - { name: mail, value: "123.123.123.122" }
-  - { name: mail, value: "123.123.123.123" }
+  - { name: mail, value: "123.123.123.122", proxied: true }
+  - { name: mail, value: "123.123.123.123", proxied: true }
   - { name: ns1, value: "123.123.123.122" }
   - { name: ns2, value: "123.123.123.123" }
-  - { name: server1, value: "123.123.123.120" }
-  - { name: server2, value: "123.123.123.121" }
+  - { name: server1, value: "123.123.123.120", proxied: true }
+  - { name: server2, value: "123.123.123.121", proxied: true }
   - { name: server3, value: "123.123.123.122" }
   - { name: server4, value: "123.123.123.123" }
   # add new entries to bottom
@@ -15,18 +15,18 @@ A:
 AAAA:
   # - { name: "@", value: "::1" }  # NOTE: @ records only work in CF
   # - { name: "@", value: "::2" }  # NOTE: @ records only work in CF
-  - { name: ns1, value: "::3" }
-  - { name: ns2, value: "::4" }
-  - { name: mail, value: "::3" }
-  - { name: mail, value: "::4" }
-  - { name: server1, value: "::1" }
-  - { name: server2, value: "::2" }
-  - { name: server3, value: "::3" }
-  - { name: server4, value: "::4" }
+  - { name: mail, value: "::4", proxied: true }
+  - { name: mail, value: "::5", proxied: true }
+  - { name: ns1, value: "::4" }
+  - { name: ns2, value: "::5" }
+  - { name: server1, value: "::2", proxied: true }
+  - { name: server2, value: "::3", proxied: true }
+  - { name: server3, value: "::4" }
+  - { name: server4, value: "::5" }
   # add new entries to bottom
 
 CNAME:
-  - { name: www, value: teamvinted.com }
+  - { name: www, value: teamvinted.com, proxied: true }
   # add new entries to bottom
 
 MX:
