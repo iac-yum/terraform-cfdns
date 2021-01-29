@@ -1,0 +1,17 @@
+---
+version: '2'
+
+services:
+  nameserver:
+    container_name: nameserver
+    hostname: localhost
+    image: ventz/bind:9.16.6-r0
+    ports:
+      - 127.0.0.1:53:54/tcp
+      - 127.0.0.1:53:54/udp
+    volumes:
+      - ./named.conf:/etc/named/named.conf
+      - ./keys.conf:/etc/named/keys.conf
+      - ./teamvinted.com.zone:/var/named/teamvinted.com.zone
+      - ./123.123.123.in-addr.arpa.zone:/var/named/123.123.123.in-addr.arpa.zone
+
