@@ -1,7 +1,7 @@
 ---
 A:
-  - { name: "@", value: "123.123.123.120" }
-  - { name: "@", value: "123.123.123.121" }
+  # - { name: "@", value: "123.123.123.120" }  # NOTE: @ records only work in CF
+  # - { name: "@", value: "123.123.123.121" }  # NOTE: @ records only work in CF
   - { name: mail, value: "123.123.123.122" }
   - { name: mail, value: "123.123.123.123" }
   - { name: ns1, value: "123.123.123.122" }
@@ -13,8 +13,8 @@ A:
   # add new entries to bottom
 
 AAAA:
-  - { name: "@", value: "::1" }
-  - { name: "@", value: "::2" }
+  # - { name: "@", value: "::1" }  # NOTE: @ records only work in CF
+  # - { name: "@", value: "::2" }  # NOTE: @ records only work in CF
   - { name: ns1, value: "::3" }
   - { name: ns2, value: "::4" }
   - { name: mail, value: "::3" }
