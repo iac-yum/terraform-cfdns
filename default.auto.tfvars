@@ -1,1 +1,1 @@
-zone = "teamvinted.com"
+zone = "example.com"
