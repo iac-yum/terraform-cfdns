@@ -26,11 +26,11 @@ AAAA:
   # add new entries to bottom
 
 CNAME:
-  - { name: www, value: teamvinted.com, proxied: true }
+  - { name: www, value: example.com, proxied: true }
   # add new entries to bottom
 
 MX:
-  - { value: mail.teamvinted.com, priority: 10 }
+  - { value: mail.example.com, priority: 10 }
   # add new entries to bottom
 
 TXT:
